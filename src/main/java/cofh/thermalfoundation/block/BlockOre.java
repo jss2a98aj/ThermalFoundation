@@ -35,6 +35,8 @@ public class BlockOre extends Block implements IInitializer {
 		setHarvestLevel("pickaxe", 1, 0);
 		setHarvestLevel("pickaxe", 1, 1);
 		setHarvestLevel("pickaxe", 3, 6);
+		setHarvestLevel("pickaxe", 1, 7);
+		setHarvestLevel("pickaxe", 3, 8);
 	}
 
 	@Override
@@ -89,6 +91,8 @@ public class BlockOre extends Block implements IInitializer {
 		oreNickel = new ItemStack(this, 1, 4);
 		orePlatinum = new ItemStack(this, 1, 5);
 		oreMithril = new ItemStack(this, 1, 6);
+		oreAluminum = new ItemStack(this, 1, 7);
+		oreIridium = new ItemStack(this, 1, 8);
 
 		ItemHelper.registerWithHandlers("oreCopper", oreCopper);
 		ItemHelper.registerWithHandlers("oreTin", oreTin);
@@ -97,6 +101,8 @@ public class BlockOre extends Block implements IInitializer {
 		ItemHelper.registerWithHandlers("oreNickel", oreNickel);
 		ItemHelper.registerWithHandlers("orePlatinum", orePlatinum);
 		ItemHelper.registerWithHandlers("oreMithril", oreMithril);
+		ItemHelper.registerWithHandlers("oreAluminum", oreAluminum);
+		ItemHelper.registerWithHandlers("oreIridium", oreIridium);
 
 		return true;
 	}
@@ -117,14 +123,16 @@ public class BlockOre extends Block implements IInitializer {
 		ItemHelper.addSmelting(TFItems.ingotNickel, oreNickel, 1.0F);
 		ItemHelper.addSmelting(TFItems.ingotPlatinum, orePlatinum, 1.0F);
 		ItemHelper.addSmelting(TFItems.ingotMithril, oreMithril, 1.5F);
+		ItemHelper.addSmelting(TFItems.ingotAluminum, oreAluminum, 0.6F);
+		ItemHelper.addSmelting(TFItems.ingotIridium, oreIridium, 1.2F);
 
 		return true;
 	}
 
-	public static final String[] NAMES = { "copper", "tin", "silver", "lead", "nickel", "platinum", "mithril" };
+	public static final String[] NAMES = { "copper", "tin", "silver", "lead", "nickel", "platinum", "mithril", "aluminum", "iridium" };
 	public static final IIcon[] TEXTURES = new IIcon[NAMES.length];
-	public static final int[] LIGHT = { 0, 0, 4, 0, 0, 4, 8 };
-	public static final int[] RARITY = { 0, 0, 0, 0, 0, 1, 2 };
+	public static final int[] LIGHT = { 0, 0, 4, 0, 0, 4, 8, 0, 4 };
+	public static final int[] RARITY = { 0, 0, 0, 0, 0, 1, 2, 0, 1 };
 
 	public static ItemStack oreCopper;
 	public static ItemStack oreTin;
@@ -133,5 +141,7 @@ public class BlockOre extends Block implements IInitializer {
 	public static ItemStack oreNickel;
 	public static ItemStack orePlatinum;
 	public static ItemStack oreMithril;
+	public static ItemStack oreAluminum;
+	public static ItemStack oreIridium;
 
 }

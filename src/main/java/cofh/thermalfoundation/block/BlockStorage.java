@@ -38,6 +38,8 @@ public class BlockStorage extends Block implements IInitializer {
 		setHarvestLevel("pickaxe", 1, 1);
 		setHarvestLevel("pickaxe", 3, 6);
 		setHarvestLevel("pickaxe", 3, 12);
+		setHarvestLevel("pickaxe", 1, 13);
+		setHarvestLevel("pickaxe", 3, 14);
 	}
 
 	@Override
@@ -140,6 +142,8 @@ public class BlockStorage extends Block implements IInitializer {
 		blockSignalum = new ItemStack(this, 1, 10);
 		blockLumium = new ItemStack(this, 1, 11);
 		blockEnderium = new ItemStack(this, 1, 12);
+		blockAluminum = new ItemStack(this, 1, 13);
+		blockIridium = new ItemStack(this, 1, 14);
 
 		ItemHelper.registerWithHandlers("blockCopper", blockCopper);
 		ItemHelper.registerWithHandlers("blockTin", blockTin);
@@ -154,6 +158,8 @@ public class BlockStorage extends Block implements IInitializer {
 		ItemHelper.registerWithHandlers("blockSignalum", blockSignalum);
 		ItemHelper.registerWithHandlers("blockLumium", blockLumium);
 		ItemHelper.registerWithHandlers("blockEnderium", blockEnderium);
+		ItemHelper.registerWithHandlers("blockAluminum", blockAluminum);
+		ItemHelper.registerWithHandlers("blockIridium", blockIridium);
 
 		return true;
 	}
@@ -180,17 +186,19 @@ public class BlockStorage extends Block implements IInitializer {
 		ItemHelper.addStorageRecipe(blockSignalum, "ingotSignalum");
 		ItemHelper.addStorageRecipe(blockLumium, "ingotLumium");
 		ItemHelper.addStorageRecipe(blockEnderium, "ingotEnderium");
+		ItemHelper.addStorageRecipe(blockAluminum, "ingotAluminum");
+		ItemHelper.addStorageRecipe(blockIridium, "ingotIridium");
 
 		return true;
 	}
 
 	public static final String[] NAMES = { "copper", "tin", "silver", "lead", "nickel", "platinum", "mithril", "electrum", "invar", "bronze", "signalum",
-			"lumium", "enderium" };
+			"lumium", "enderium", "aluminum", "iridium" };
 	public static final IIcon[] TEXTURES = new IIcon[NAMES.length];
-	public static final int[] LIGHT = { 0, 0, 4, 0, 0, 4, 8, 0, 0, 0, 7, 15, 4 };
-	public static final float[] HARDNESS = { 5, 5, 5, 4, 10, 5, 30, 4, 20, 5, 5, 5, 40 };
-	public static final float[] RESISTANCE = { 6, 6, 6, 12, 6, 6, 120, 6, 12, 6, 9, 9, 120 };
-	public static final int[] RARITY = { 0, 0, 0, 0, 0, 1, 2, 0, 0, 0, 1, 1, 2 };
+	public static final int[] LIGHT = { 0, 0, 4, 0, 0, 4, 8, 0, 0, 0, 7, 15, 4, 0, 4 };
+	public static final float[] HARDNESS = { 5, 5, 5, 4, 10, 5, 30, 4, 20, 5, 5, 5, 40, 5, 10 };
+	public static final float[] RESISTANCE = { 6, 6, 6, 12, 6, 6, 120, 6, 12, 6, 9, 9, 120, 6, 15 };
+	public static final int[] RARITY = { 0, 0, 0, 0, 0, 1, 2, 0, 0, 0, 1, 1, 2, 0, 1 };
 
 	public static ItemStack blockCopper;
 	public static ItemStack blockTin;
@@ -205,5 +213,7 @@ public class BlockStorage extends Block implements IInitializer {
 	public static ItemStack blockSignalum;
 	public static ItemStack blockLumium;
 	public static ItemStack blockEnderium;
+	public static ItemStack blockAluminum;
+	public static ItemStack blockIridium;
 
 }

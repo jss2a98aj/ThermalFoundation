@@ -85,6 +85,8 @@ item.thermalfoundation.material.dustBronze.name=Bronze Blend
 item.thermalfoundation.material.dustSignalum.name=Signalum Blend
 item.thermalfoundation.material.dustLumium.name=Lumium Blend
 item.thermalfoundation.material.dustEnderium.name=Enderium Blend
+item.thermalfoundation.material.dustAluminum.name=Pulverized Aluminum
+item.thermalfoundation.material.dustIridium.name=Pulverized Iridium
 
 item.thermalfoundation.material.ingotCopper.name=Copper Ingot
 item.thermalfoundation.material.ingotTin.name=Tin Ingot
@@ -99,6 +101,8 @@ item.thermalfoundation.material.ingotBronze.name=Bronze Ingot
 item.thermalfoundation.material.ingotSignalum.name=Signalum Ingot
 item.thermalfoundation.material.ingotLumium.name=Lumium Ingot
 item.thermalfoundation.material.ingotEnderium.name=Enderium Ingot
+item.thermalfoundation.material.ingotAluminum.name=Aluminum Ingot
+item.thermalfoundation.material.ingotIridium.name=Iridium Ingot
 
 item.thermalfoundation.material.nuggetCopper.name=Copper Nugget
 item.thermalfoundation.material.nuggetTin.name=Tin Nugget
@@ -113,6 +117,8 @@ item.thermalfoundation.material.nuggetBronze.name=Bronze Nugget
 item.thermalfoundation.material.nuggetSignalum.name=Signalum Nugget
 item.thermalfoundation.material.nuggetLumium.name=Lumium Nugget
 item.thermalfoundation.material.nuggetEnderium.name=Enderium Nugget
+item.thermalfoundation.material.nuggetAluminum.name=Aluminum Nugget
+item.thermalfoundation.material.nuggetIridium.name=Iridium Nugget
 
 item.thermalfoundation.material.dustPyrotheum.name=Pyrotheum Dust
 item.thermalfoundation.material.dustCryotheum.name=Cryotheum Dust
@@ -133,6 +139,8 @@ item.thermalfoundation.material.gearBronze.name=Bronze Gear
 item.thermalfoundation.material.gearSignalum.name=Signalum Gear
 item.thermalfoundation.material.gearLumium.name=Lumium Gear
 item.thermalfoundation.material.gearEnderium.name=Enderium Gear
+item.thermalfoundation.material.gearAluminum.name=Aluminum Gear
+item.thermalfoundation.material.gearIridium.name=Iridium Gear
 
 item.thermalfoundation.material.rodBlizz.name=Blizz Rod
 item.thermalfoundation.material.dustBlizz.name=Blizz Powder
@@ -185,6 +193,11 @@ item.thermalfoundation.armor.platinumHelmet.name=Platinum Helmet
 item.thermalfoundation.armor.platinumPlate.name=Platinum Chestplate
 item.thermalfoundation.armor.platinumLegs.name=Platinum Leggings
 item.thermalfoundation.armor.platinumBoots.name=Platinum Boots
+
+item.thermalfoundation.armor.aluminumHelmet.name=Aluminum Helmet
+item.thermalfoundation.armor.aluminumPlate.name=Aluminum Chestplate
+item.thermalfoundation.armor.aluminumLegs.name=Aluminum Leggings
+item.thermalfoundation.armor.aluminumBoots.name=Aluminum Boots
 
 item.thermalfoundation.tool.copperSword.name=Copper Sword
 item.thermalfoundation.tool.copperShovel.name=Copper Shovel
@@ -276,6 +289,16 @@ item.thermalfoundation.tool.platinumFishingRod.name=Platinum Fishing Rod
 item.thermalfoundation.tool.platinumSickle.name=Platinum Sickle
 item.thermalfoundation.tool.platinumBow.name=Platinum Reinforced Bow
 
+item.thermalfoundation.tool.aluminumSword.name=Aluminum Sword
+item.thermalfoundation.tool.aluminumShovel.name=Aluminum Shovel
+item.thermalfoundation.tool.aluminumPickaxe.name=Aluminum Pickaxe
+item.thermalfoundation.tool.aluminumAxe.name=Aluminum Axe
+item.thermalfoundation.tool.aluminumHoe.name=Aluminum Hoe
+item.thermalfoundation.tool.aluminumShears.name=Aluminum Shears
+item.thermalfoundation.tool.aluminumFishingRod.name=Aluminum Fishing Rod
+item.thermalfoundation.tool.aluminumSickle.name=Aluminum Sickle
+item.thermalfoundation.tool.aluminumBow.name=Aluminum Reinforced Bow
+
 item.thermalfoundation.tool.woodShears.name=Wood Shears
 item.thermalfoundation.tool.woodSickle.name=Wood Sickle
 
@@ -325,6 +348,8 @@ tile.thermalfoundation.ore.lead.name=Lead Ore
 tile.thermalfoundation.ore.nickel.name=Ferrous Ore
 tile.thermalfoundation.ore.platinum.name=Platinum Ore
 tile.thermalfoundation.ore.mithril.name=Mana Infused Ore
+tile.thermalfoundation.ore.aluminum.name=Aluminum Ore
+tile.thermalfoundation.ore.iridium.name=Iridium Ore
 
 tile.thermalfoundation.storage.copper.name=Copper Block
 tile.thermalfoundation.storage.tin.name=Tin Block
@@ -339,6 +364,8 @@ tile.thermalfoundation.storage.bronze.name=Bronze Block
 tile.thermalfoundation.storage.signalum.name=Signalum Block
 tile.thermalfoundation.storage.lumium.name=Lumium Block
 tile.thermalfoundation.storage.enderium.name=Enderium Block
+tile.thermalfoundation.storage.aluminum.name=Aluminum Block
+tile.thermalfoundation.storage.iridium.name=Iridium Block
 
 #Tinker's Construct Compatibility
 material.thermalfoundation.invar=Invar

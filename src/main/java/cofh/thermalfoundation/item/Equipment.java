@@ -96,6 +96,7 @@ public enum Equipment {
 			itemBoots.putAttribute("generic.movementSpeed", movementBonus);
 		}
 	},
+	Aluminum(    1,  225,  10.0F,  1.75F,  14,   12, new int[] { 1, 3, 3, 1 }),
 	;
 	// @formatter:on
 

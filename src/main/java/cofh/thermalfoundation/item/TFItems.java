@@ -68,6 +68,8 @@ public class TFItems {
 		dustSignalum = itemMaterial.addOreDictItem(42, "dustSignalum", 1);
 		dustLumium = itemMaterial.addOreDictItem(43, "dustLumium", 1);
 		dustEnderium = itemMaterial.addOreDictItem(44, "dustEnderium", 2);
+		dustAluminum = itemMaterial.addOreDictItem(45, "dustAluminum");
+		dustIridium = itemMaterial.addOreDictItem(46, "dustIridium", 1);
 
 		/* Ingots */
 		ingotCopper = itemMaterial.addOreDictItem(64, "ingotCopper");
@@ -83,6 +85,8 @@ public class TFItems {
 		ingotSignalum = itemMaterial.addOreDictItem(74, "ingotSignalum", 1);
 		ingotLumium = itemMaterial.addOreDictItem(75, "ingotLumium", 1);
 		ingotEnderium = itemMaterial.addOreDictItem(76, "ingotEnderium", 2);
+		ingotAluminum = itemMaterial.addOreDictItem(77, "ingotAluminum");
+		ingotIridium = itemMaterial.addOreDictItem(78, "ingotIridium", 1);
 
 		nuggetIron = itemMaterial.addOreDictItem(8, "nuggetIron");
 		/* Nuggets */
@@ -99,6 +103,8 @@ public class TFItems {
 		nuggetSignalum = itemMaterial.addOreDictItem(106, "nuggetSignalum", 1);
 		nuggetLumium = itemMaterial.addOreDictItem(107, "nuggetLumium", 1);
 		nuggetEnderium = itemMaterial.addOreDictItem(108, "nuggetEnderium", 2);
+		nuggetAluminum = itemMaterial.addOreDictItem(109, "nuggetAluminum");
+		nuggetIridium = itemMaterial.addOreDictItem(110, "nuggetIridium", 1);
 
 		gearIron = itemMaterial.addOreDictItem(12, "gearIron");
 		gearGold = itemMaterial.addOreDictItem(13, "gearGold");
@@ -116,6 +122,8 @@ public class TFItems {
 		gearSignalum = itemMaterial.addOreDictItem(138, "gearSignalum", 1);
 		gearLumium = itemMaterial.addOreDictItem(139, "gearLumium", 1);
 		gearEnderium = itemMaterial.addOreDictItem(140, "gearEnderium", 2);
+		gearAluminum = itemMaterial.addOreDictItem(141, "gearAluminum");
+		gearIridium = itemMaterial.addOreDictItem(142, "gearIridium", 1);
 
 		/* Additional Items */
 		dustPyrotheum = itemMaterial.addOreDictItem(512, "dustPyrotheum", 2);
@@ -201,6 +209,8 @@ public class TFItems {
 		ItemHelper.addSmelting(ingotBronze, dustBronze, 0.0F);
 		ItemHelper.addSmelting(ingotSignalum, dustSignalum, 0.0F);
 		ItemHelper.addSmelting(ingotLumium, dustLumium, 0.0F);
+		ItemHelper.addSmelting(ingotAluminum, dustAluminum, 0.0F);
+		ItemHelper.addSmelting(ingotIridium, dustIridium, 0.0F);
 		// No Enderium
 
 		/* Alloy Recipes */
@@ -231,6 +241,8 @@ public class TFItems {
 		ItemHelper.addTwoWayStorageRecipe(ingotSignalum, "ingotSignalum", nuggetSignalum, "nuggetSignalum");
 		ItemHelper.addTwoWayStorageRecipe(ingotLumium, "ingotLumium", nuggetLumium, "nuggetLumium");
 		ItemHelper.addTwoWayStorageRecipe(ingotEnderium, "ingotEnderium", nuggetEnderium, "nuggetEnderium");
+		ItemHelper.addTwoWayStorageRecipe(ingotAluminum, "ingotAluminum", nuggetAluminum, "nuggetAluminum");
+		ItemHelper.addTwoWayStorageRecipe(ingotIridium, "ingotIridium", nuggetIridium, "nuggetIridium");
 
 		ItemHelper.addReverseStorageRecipe(ingotCopper, "blockCopper");
 		ItemHelper.addReverseStorageRecipe(ingotTin, "blockTin");
@@ -245,6 +257,8 @@ public class TFItems {
 		ItemHelper.addReverseStorageRecipe(ingotSignalum, "blockSignalum");
 		ItemHelper.addReverseStorageRecipe(ingotLumium, "blockLumium");
 		ItemHelper.addReverseStorageRecipe(ingotEnderium, "blockEnderium");
+		ItemHelper.addReverseStorageRecipe(ingotAluminum, "blockAluminum");
+        ItemHelper.addReverseStorageRecipe(ingotIridium, "blockIridium");
 
 		/* Gears */
 		ItemHelper.addGearRecipe(gearIron, "ingotIron");
@@ -262,6 +276,8 @@ public class TFItems {
 		ItemHelper.addGearRecipe(gearSignalum, "ingotSignalum");
 		ItemHelper.addGearRecipe(gearLumium, "ingotLumium");
 		ItemHelper.addGearRecipe(gearEnderium, "ingotEnderium");
+		ItemHelper.addGearRecipe(gearAluminum, "ingotAluminum");
+        ItemHelper.addGearRecipe(gearIridium, "ingotIridium");
 
 		/* Equipment */
 		Equipment.postInit();
@@ -315,6 +331,8 @@ public class TFItems {
 	public static ItemStack ingotSignalum;
 	public static ItemStack ingotLumium;
 	public static ItemStack ingotEnderium;
+	public static ItemStack ingotAluminum;
+    public static ItemStack ingotIridium;
 
 	public static ItemStack dustCopper;
 	public static ItemStack dustTin;
@@ -329,6 +347,8 @@ public class TFItems {
 	public static ItemStack dustSignalum;
 	public static ItemStack dustLumium;
 	public static ItemStack dustEnderium;
+	public static ItemStack dustAluminum;
+    public static ItemStack dustIridium;
 
 	public static ItemStack nuggetCopper;
 	public static ItemStack nuggetTin;
@@ -343,6 +363,8 @@ public class TFItems {
 	public static ItemStack nuggetSignalum;
 	public static ItemStack nuggetLumium;
 	public static ItemStack nuggetEnderium;
+	public static ItemStack nuggetAluminum;
+	public static ItemStack nuggetIridium;
 
 	public static ItemStack gearCopper;
 	public static ItemStack gearTin;
@@ -357,6 +379,8 @@ public class TFItems {
 	public static ItemStack gearSignalum;
 	public static ItemStack gearLumium;
 	public static ItemStack gearEnderium;
+	public static ItemStack gearAluminum;
+    public static ItemStack gearIridium;
 
 	public static ItemStack dustPyrotheum;
 	public static ItemStack dustCryotheum;
